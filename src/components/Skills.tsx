@@ -35,18 +35,18 @@ const Skills = () => {
         <motion.div className="flex items-center justify-center font-semibold cursor-pointer   dark:bg-light dark:text-dark bg-dark text-light rounded-full p-8 dark:shadow-light  shadow-dark lg:p-6 md:p-4 xs:text-xs xs:p-2"
         whileHover={{scale:1.05}}
         >
-          Web
+          Video Editing
         </motion.div>
-        <Skill name="CSS" x="-25vw" y="2vw"/>
-        <Skill name="HTML" x="-5vw" y="-10vw"/>
-        <Skill name="JavaScript" x="25vw" y="1vw"/>
-        <Skill name="Next.js" x="0vw" y="12vw"/>
-        <Skill name="Tailwind CSS" x="-16vw" y="-19vw"/>
-        <Skill name="Django" x="16vw" y="-18vw"/>
-        <Skill name="Flutter" x="-32vw" y="-8vw"/>
-        <Skill name="Full stack" x="0" y="-25vw"/>
-        <Skill name="Flutter Developer" x="-25vw" y="21vw"/>
-        <Skill name="Flutter" x="18vw" y="18vw"/>
+        <Skill name="Story Telling" x="-25vw" y="2vw"/>
+        <Skill name="UI/UX" x="-5vw" y="-10vw"/>
+        <Skill name="Motion Graphics" x="25vw" y="1vw"/>
+        <Skill name="Graphic Design" x="0vw" y="12vw"/>
+        <Skill name="Animation" x="-16vw" y="-19vw"/>
+        <Skill name="Premier Pro" x="16vw" y="-18vw"/>
+        <Skill name="After Effects" x="-32vw" y="-8vw"/>
+        <Skill name="Photoshop" x="0" y="-25vw"/>
+        <Skill name="Figma" x="-25vw" y="21vw"/>
+        <Skill name="Illustrator" x="18vw" y="18vw"/>
       </div>
     </>
   );

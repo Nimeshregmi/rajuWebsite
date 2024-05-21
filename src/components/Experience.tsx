@@ -65,40 +65,40 @@ const Experience = () => {
         />
         <ul className="items-start w-full flex flex-col justify-between ml-4">
           <Detail
-            position="Software Engineer"
-            company=" Google"
-            time=" 2022-Present "
-            address="Mountain View, CA"
-            companyLink="http://www.google.com"
+            position="Video Editor"
+            company=" Misguided Nepal"
+            time=" 2024-Present "
+            address="Pokhara, Nepal"
+            companyLink="https://www.youtube.com/@MisguidedNepal"
             work="Worked on a team responsible for developing new features for Google's 
             search engine, including improving the accuracy and relevance of search results and 
             developing new tools for data analysis and visualization."
           />
           <Detail
-            position="Intern"
-            company=" Facebook"
-            time=" Summer 2021  "
-            address=" Menlo Park, CA."
-            companyLink="http://www.facebook.com"
+            position="Motion Graphics Designer"
+            company="Why So Offended ?"
+            time=" 2024-Present "
+            address=" Kathmandu, Nepal"
+            companyLink="https://www.youtube.com/@WhySoOffended"
             work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
             share short-form video content, including designing and implementing a new user interface and developing 
             the backend infrastructure to support the feature."
           />
           <Detail
-            position="Software Engineer"
-            company=" Amazon"
-            time=" 2020-2021  "
-            address="Seattle, WA."
-            companyLink="http://www.amazon.com"
+            position="UI/UX Designer"
+            company="MSM Entertainments"
+            time=" 2023-Present  "
+            address="Kathmandu,Nepal"
+            companyLink="https://www.msmentertainments.com/"
             work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
             as product recommendations and user reviews, and optimizing the app's performance and reliability."
           />
           <Detail
-            position="Software Engineer Intern"
-            company=" Microsoft"
-            time=" Summer 2019  "
-            address="Redmond, WA."
-            companyLink="http://www.microsoft.com"
+            position="Video Editor"
+            company=" Hamro Nepal Khaber"
+            time="2021-2023  "
+            address="Kathmandu, Nepal"
+            companyLink="/"
             work="Worked on a team responsible for developing new features for Microsoft's Windows operating system, 
             including implementing a new user interface for a system settings panel and optimizing the performance of 
             a core system component."

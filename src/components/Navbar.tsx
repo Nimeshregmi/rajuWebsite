@@ -195,7 +195,7 @@ const Navbar = () => {
           </nav>
           <nav className="flex items-center justify-center gap-5 flex-wrap">
             <motion.a
-              href="https://twitter.com"
+              href="https://twitter.com/being_basnet"
               target="_blank"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.8 }}
@@ -203,7 +203,7 @@ const Navbar = () => {
             >
               <TwitterIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="https://github.com"
               target="_blank"
               whileHover={{ y: -3 }}
@@ -211,9 +211,9 @@ const Navbar = () => {
               className="w-6"
             >
               <GithubIcon />
-            </motion.a>
+            </motion.a> */}
             <motion.a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/raju-basnet-62637228a/"
               target="_blank"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.8 }}
@@ -221,7 +221,7 @@ const Navbar = () => {
             >
               <LinkedInIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="https://www.pinterest.com"
               target="_blank"
               whileHover={{ y: -3 }}
@@ -229,7 +229,7 @@ const Navbar = () => {
               className="w-6"
             >
               <PinterestIcon />
-            </motion.a>
+            </motion.a> */}
             <motion.a
               href="https://dribbble.com"
               target="_blank"

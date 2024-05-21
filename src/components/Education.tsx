@@ -13,7 +13,7 @@ const Detail = ({
 }: Props) => {
   const ref=useRef<HTMLLIElement>(null)
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[70%] sm:w-[90%] mx-auto flex flex-col items-center justify-between">
+    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[70%] sm:w-[90%] mx-auto flex flex-col items-start justify-between">
       <Liicons reference={ref}/>
       <motion.div
       initial={{y:50}}
@@ -51,27 +51,25 @@ const Education = () => {
         />
         <ul className="items-start w-full flex flex-col justify-between ml-4">
           <Detail
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020 "
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Bachelor in Science"
+            time="2022-2026 "
+            place="Trichandra College"
+            info="Relevant courses included Biology, Geology, Botany etc."
           />
-          <Detail
-            type="Master Of Computer Science"
-            time="2020-2022"
-            place="Tribhuwan University"
-            info="Completed a master's project on deep learning, developing a new neural network architecture for natural 
-            language understanding."
+           <Detail
+            type="Graphic Design Online Course"
+            time="2022-2022"
+            place="It tranning nepal"
+            info="Completed a Full course in Graphic Designing."
           />
-          <Detail
+          {/* <Detail
             type="Online Course Work"
             time="2011-2020 "
             place="Udemy"
             info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
             Learning Engineering.
             "
-          />
+          />  */}
           
         </ul>
       </div>
