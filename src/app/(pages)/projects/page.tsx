@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import AnimatedText from "@/components/AnimatedText";
 import Profilelayout from "@/components/Profilelayout";
 import Head from "next/head";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../../../public/images/projects/img1.png";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
   githublink: string;
   img: StaticImageData;
 }
-const ProjectImage=motion(Image)
+const ProjectImage = motion(Image);
 
 const FeatureProject = ({
   type,
@@ -28,35 +28,43 @@ const FeatureProject = ({
 }: Props) => {
   return (
     <article className="w-full relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl  dark:border-light dark:bg-dark   lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  xs:p-4     ">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%]  bg-dark rounded-[2.5rem]  rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%]
-      xs:w-full xs:rounded-[1.5rem]" />
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%]  bg-dark rounded-[2.5rem]  rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%]
+      xs:w-full xs:rounded-[1.5rem]"
+      />
       <Link
         className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg"
         href={link}
         target="_blank"
       >
-        <ProjectImage className="w-full h-auto" src={img}
-        whileHover={{scale:1.05}}
-        transition={{duration:0.5}}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-        priority
-        alt={title} />
+        <ProjectImage
+          className="w-full h-auto"
+          src={img}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5 }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          priority
+          alt={title}
+        />
       </Link>
       <div className="w-1/2 lg:w-full lg:pl-0 lg:pt-6 flex flex-col items-start justify-between pl-6 ">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
+          {type}
+        </span>
         <Link
           className="hover:underline hover:underline-offset-2"
           href={link}
           target="_blank"
         >
           {" "}
-          <h2 className="my-2 w-full dark:text-light text-left font-bold text-4xl sm:text-sm ">{title}</h2>
+          <h2 className="my-2 w-full dark:text-light text-left font-bold text-4xl sm:text-sm ">
+            {title}
+          </h2>
         </Link>
-        <p className="font-medium my-2 text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="font-medium my-2 text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center ">
-          <Link className="w-10  dark:text-light" href={githublink} target="_blank">
-            <GithubIcon />
-          </Link>
           <Link
             className="hover:underline hover:underline-offset-2 font-semibold ml-3 bg-dark text-light rounded-lg  py-3 text-lg px-6 dark:bg-light dark:text-dark sm:px-4 sm:text-base"
             href={link}
@@ -79,22 +87,29 @@ const Project = ({ type, title, img, link, githublink }: Props) => {
         href={link}
         target="_blank"
       >
-        <ProjectImage className="w-full h-auto" src={img}
-        whileHover={{scale:1.05}}
-        transition={{duration:0.5}}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-        priority
-        alt={title} />
+        <ProjectImage
+          className="w-full h-auto"
+          src={img}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5 }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          priority
+          alt={title}
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           className="hover:underline hover:underline-offset-2"
           href={link}
           target="_blank"
         >
           {" "}
-          <h2 className="my-2 w-full text-left font-bold text-3xl dark:text-light">{title}</h2>
+          <h2 className="my-2 w-full text-left font-bold text-3xl dark:text-light">
+            {title}
+          </h2>
         </Link>
 
         <div className="mt-2 w-full flex items-center justify-between ">
@@ -104,9 +119,6 @@ const Project = ({ type, title, img, link, githublink }: Props) => {
             target="_blank"
           >
             Visit
-          </Link>
-          <Link className="w-8 dark:text-light" href={githublink} target="_blank">
-            <GithubIcon />
           </Link>
         </div>
       </div>
@@ -133,11 +145,9 @@ const page = () => {
                 githublink="/"
                 img={project1}
                 type={"Feature Project"}
-                title={"Crypto Screener Application"}
-                summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                }
-                link={"/"}
+                title={"How SACAR Adhikari aka Lil. BUDDHA went CRAZY?"}
+                summary={"A youtube video on life story of Sacar Adhikari."}
+                link={"https://www.youtube.com/watch?v=qZyklrDwfGc&t=844s"}
               />
             </div>
             <div className="col-span-6">
@@ -145,10 +155,8 @@ const page = () => {
                 githublink="/"
                 img={project1}
                 type={"Feature Project"}
-                title={"Crypto Screener Application"}
-                summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                }
+                title={"How SACAR Adhikari aka Lil. BUDDHA went CRAZY?"}
+                summary={"A Beautiful video on life story of sacar Adhikari."}
                 link={"/"}
               />
             </div>
@@ -158,14 +166,12 @@ const page = () => {
                 githublink="/"
                 img={project1}
                 type={"Feature Project"}
-                title={"Crypto Screener Application"}
-                summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                }
+                title={"How SACAR Adhikari aka Lil. BUDDHA went CRAZY?"}
+                summary={"A Beautiful video on life story of sacar Adhikari."}
                 link={"/"}
               />
             </div>
-            <div className="col-span-12">
+            {/* <div className="col-span-12">
               <FeatureProject
                 githublink="/"
                 img={project1}
@@ -176,8 +182,8 @@ const page = () => {
                 }
                 link={"/"}
               />
-            </div>
-            <div className="col-span-6">
+            </div> */}
+            {/* <div className="col-span-6">
               {" "}
               <Project
                 githublink="/"
@@ -189,8 +195,8 @@ const page = () => {
                 }
                 link={"/"}
               />
-            </div>
-            <div className="col-span-6">
+            </div> */}
+            {/* <div className="col-span-6">
               {" "}
               <Project
                 githublink="/"
@@ -202,7 +208,7 @@ const page = () => {
                 }
                 link={"/"}
               />
-            </div>
+            </div> */}
           </div>
         </Profilelayout>
       </main>

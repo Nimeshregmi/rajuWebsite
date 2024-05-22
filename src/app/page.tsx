@@ -37,7 +37,7 @@ export default function Home() {
                 " href="./dummy.pdf" target="_blank">Resume
                 <LinkArrow className={"w-5 ml-1"} />
                 </Link>
-                <Link href={"mailto:abc@gmail.com"} target="_blank"
+                <Link href={"mailto:basnetbeing@gmail.com"} target="_blank"
                 className="ml-4 capitalize underline text-lg font-medium md:text-base "
                 >Contact</Link>
               </div>

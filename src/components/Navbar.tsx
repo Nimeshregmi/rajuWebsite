@@ -5,12 +5,16 @@ import { usePathname, useRouter } from "next/navigation";
 import Logo from "./Logo";
 import {
   DribbbleIcon,
+  FacebookIcon,
   GithubIcon,
+  InstagramIcon,
+  // InstagramIcon,
   LinkedInIcon,
   MoonIcon,
   PinterestIcon,
   SunIcon,
   TwitterIcon,
+  WhatsAppIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
@@ -24,16 +28,21 @@ interface CustomMobileLinksProps {
   title: ReactNode;
   className?: string;
   href: string;
-  toggle:Function
+  toggle: Function;
 }
 
-const CustomMobileLinks = ({ title, className = "", href,toggle }: CustomMobileLinksProps) => {
+const CustomMobileLinks = ({
+  title,
+  className = "",
+  href,
+  toggle,
+}: CustomMobileLinksProps) => {
   const router = usePathname();
-  const route=useRouter()
-  const handleClick=()=>{
+  const route = useRouter();
+  const handleClick = () => {
     toggle();
     route.push(href);
-  }
+  };
   return (
     <button onClick={handleClick} className="w-full my-1 flex flex-col">
       <motion.a
@@ -84,8 +93,10 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className="w-full px-32  justify-between items-center py-8 font-medium flex
-      z-10 lg:px-16 md:px-12 sm:px-6 dark:text-light relative">
+      <header
+        className="w-full px-32  justify-between items-center py-8 font-medium flex
+      z-10 lg:px-16 md:px-12 sm:px-6 dark:text-light relative"
+      >
         {/* Button for small size for small screen */}
         <button
           className=" flex-col items-center justify-center text-3xl transition-all duration-500 left-0
@@ -110,22 +121,38 @@ const Navbar = () => {
             }`}
           ></span>
         </button>
-            {/* for Mobile devices Menu of navbar */}
-            <motion.div
-            initial={{scale:0,opacity:0,x:"-68%",y:"-50%"}}
-            animate={{scale:1,opacity:1}}
-            transition={{duration:1}}
-            
-            className={`min-w-[70vw]  flex-col fixed justify-between items-center top-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 py-12 rounded-lg backdrop-blur-md ${isOpen?"flex":"hidden"}`}>
+        {/* for Mobile devices Menu of navbar */}
+        <motion.div
+          initial={{ scale: 0, opacity: 0, x: "-68%", y: "-50%" }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className={`min-w-[70vw]  flex-col fixed justify-between items-center top-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 py-12 rounded-lg backdrop-blur-md ${
+            isOpen ? "flex" : "hidden"
+          }`}
+        >
           <nav className="flex flex-col items-center justify-center ">
-            <CustomMobileLinks href="/" title="Home" className="mr-4" toggle={handleOnclick}/>
-            <CustomMobileLinks   className="" toggle={handleOnclick} href="/about" title="About"/>
-            <CustomMobileLinks   className="" toggle={handleOnclick} href="/projects" title="Projects"/>
-            <CustomMobileLinks   className="" toggle={handleOnclick} href="/articles" title="Articles"/>
+            <CustomMobileLinks
+              href="/"
+              title="Home"
+              className="mr-4"
+              toggle={handleOnclick}
+            />
+            <CustomMobileLinks
+              className=""
+              toggle={handleOnclick}
+              href="/about"
+              title="About"
+            />
+            <CustomMobileLinks
+              className=""
+              toggle={handleOnclick}
+              href="/projects"
+              title="Projects"
+            />
           </nav>
           <nav className="flex items-center justify-center gap-5 sm:gap-3 flex-wrap mt-3">
             <motion.a
-              href="https://twitter.com"
+              href="https://twitter.com/being_basnet"
               target="_blank"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.8 }}
@@ -133,17 +160,9 @@ const Navbar = () => {
             >
               <TwitterIcon />
             </motion.a>
+
             <motion.a
-              href="https://github.com"
-              target="_blank"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.8 }}
-              className="w-6  dark:bg-dark rounded-full bg-light"
-            >
-              <GithubIcon />
-            </motion.a>
-            <motion.a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/raju-basnet-62637228a/"
               target="_blank"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.8 }}
@@ -151,23 +170,33 @@ const Navbar = () => {
             >
               <LinkedInIcon />
             </motion.a>
+
             <motion.a
-              href="https://www.pinterest.com"
-              target="_blank"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.8 }}
-              className="w-6 bg-light rounded-full"
-            >
-              <PinterestIcon />
-            </motion.a>
-            <motion.a
-              href="https://dribbble.com"
+              href="https://www.facebook.com/beingrajubasnet/"
               target="_blank"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.8 }}
               className="w-6"
             >
-              <DribbbleIcon />
+              <FacebookIcon />
+            </motion.a>
+            <motion.a
+              href="https://wa.me/9825997669"
+              target="_blank"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-6"
+            >
+              <WhatsAppIcon />
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com/beingbasnet/"
+              target="_blank"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-6"
+            >
+              <InstagramIcon />
             </motion.a>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -184,14 +213,12 @@ const Navbar = () => {
           </nav>
         </motion.div>
 
-
-            {/* For desktop and larger screen */}
+        {/* For desktop and larger screen */}
         <div className="w-full flex justify-between items-center lg:hidden">
           <nav>
             <CustomLinks href="/" title="Home" className="mr-4" />
             <CustomLinks href="/about" title="About" className="mx-4" />
             <CustomLinks href="/projects" title="Projects" className="mx-4" />
-            <CustomLinks href="/articles" title="Articles" className="ml-4" />
           </nav>
           <nav className="flex items-center justify-center gap-5 flex-wrap">
             <motion.a
@@ -203,15 +230,7 @@ const Navbar = () => {
             >
               <TwitterIcon />
             </motion.a>
-            {/* <motion.a
-              href="https://github.com"
-              target="_blank"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.8 }}
-              className="w-6"
-            >
-              <GithubIcon />
-            </motion.a> */}
+
             <motion.a
               href="https://www.linkedin.com/in/raju-basnet-62637228a/"
               target="_blank"
@@ -221,23 +240,33 @@ const Navbar = () => {
             >
               <LinkedInIcon />
             </motion.a>
-            {/* <motion.a
-              href="https://www.pinterest.com"
-              target="_blank"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.8 }}
-              className="w-6"
-            >
-              <PinterestIcon />
-            </motion.a> */}
+
             <motion.a
-              href="https://dribbble.com"
+              href="https://www.facebook.com/beingrajubasnet/"
               target="_blank"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.8 }}
               className="w-6"
             >
-              <DribbbleIcon />
+              <FacebookIcon />
+            </motion.a>
+            <motion.a
+              href="https://wa.me/9825997669"
+              target="_blank"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-6"
+            >
+              <WhatsAppIcon />
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com/beingbasnet/"
+              target="_blank"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-6"
+            >
+              <InstagramIcon />
             </motion.a>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
