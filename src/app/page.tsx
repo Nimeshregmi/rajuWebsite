@@ -34,12 +34,12 @@ export default function Home() {
                 <Link className="px-3 text-lg font-semibold rounded-2xl dark:bg-light bg-dark text-light dark:text-dark items-center p-2.5
                 hover:bg-light hover:text-dark  border-2  flex hover:border-dark  dark:hover:border-light border-solid
                 hover:dark:bg-dark hover:dark:text-light md:px-4 md:py-2 md:text-base
-                " href="./dummy.pdf" target="_blank">Resume
+                " href="mailto:basnetbeing@gmail.com" target="_blank">Contact
                 <LinkArrow className={"w-5 ml-1"} />
                 </Link>
-                <Link href={"mailto:basnetbeing@gmail.com"} target="_blank"
+                {/* <Link href={"mailto:basnetbeing@gmail.com"} target="_blank"
                 className="ml-4 capitalize underline text-lg font-medium md:text-base "
-                >Contact</Link>
+                >Contact</Link> */}
               </div>
             </div>
           </div>
