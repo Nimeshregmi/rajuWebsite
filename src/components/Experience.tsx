@@ -70,9 +70,7 @@ const Experience = () => {
             time=" 2024-Present "
             address="Pokhara, Nepal"
             companyLink="https://www.youtube.com/@MisguidedNepal"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            work="Responsible for editing and producing engaging video content, collaborating with the creative team to enhance visual storytelling and brand presence."
           />
           <Detail
             position="Motion Graphics Designer"
@@ -80,9 +78,7 @@ const Experience = () => {
             time=" 2024-Present "
             address=" Kathmandu, Nepal"
             companyLink="https://www.youtube.com/@WhySoOffended"
-            work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-            share short-form video content, including designing and implementing a new user interface and developing 
-            the backend infrastructure to support the feature."
+            work="Designs and animates dynamic motion graphics, enhancing visual content for diverse media platforms and collaborating with the creative team to elevate brand storytelling."
           />
           <Detail
             position="UI/UX Designer"
@@ -90,8 +86,7 @@ const Experience = () => {
             time=" 2023-Present  "
             address="Kathmandu,Nepal"
             companyLink="https://www.msmentertainments.com/"
-            work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
-            as product recommendations and user reviews, and optimizing the app's performance and reliability."
+            work="Designs user-friendly interfaces and enhances user experience, collaborating with developers and stakeholders to create engaging digital products."
           />
           <Detail
             position="Video Editor"
@@ -99,9 +94,7 @@ const Experience = () => {
             time="2021-2023  "
             address="Kathmandu, Nepal"
             companyLink="/"
-            work="Worked on a team responsible for developing new features for Microsoft's Windows operating system, 
-            including implementing a new user interface for a system settings panel and optimizing the performance of 
-            a core system component."
+            work="Edited and produced video content, ensuring high-quality visuals and engaging storytelling for news and media broadcasts."
           />
         </ul>
       </div>

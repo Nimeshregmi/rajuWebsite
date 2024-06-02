@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../../../public/images/projects/img1.png";
+import project2 from "../../../../public/images/projects/img2.png";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -150,26 +151,18 @@ const page = () => {
                 link={"https://www.youtube.com/watch?v=qZyklrDwfGc&t=844s"}
               />
             </div>
-            <div className="col-span-6">
-              <Project
+            <div className="col-span-12">
+              <FeatureProject
                 githublink="/"
-                img={project1}
+                img={project2}
                 type={"Feature Project"}
-                title={"How SACAR Adhikari aka Lil. BUDDHA went CRAZY?"}
-                summary={"A Beautiful video on life story of sacar Adhikari."}
-                link={"/"}
+                title={"Your SALARY is NOT ENOUGH!! | WSO |"}
+                summary={"Salary to maintain simple living standard in nepal."}
+                link={"https://www.youtube.com/watch?v=Qju3fqYHQIM"}
               />
             </div>
-            <div className="col-span-6">
-              {" "}
-              <Project
-                githublink="/"
-                img={project1}
-                type={"Feature Project"}
-                title={"How SACAR Adhikari aka Lil. BUDDHA went CRAZY?"}
-                summary={"A Beautiful video on life story of sacar Adhikari."}
-                link={"/"}
-              />
+            <div>
+              
             </div>
             {/* <div className="col-span-12">
               <FeatureProject
