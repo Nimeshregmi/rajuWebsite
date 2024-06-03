@@ -90,11 +90,11 @@ const Experience = () => {
           />
           <Detail
             position="Video Editor"
-            company=" Hamro Nepal Khaber"
-            time="2021-2023  "
-            address="Kathmandu, Nepal"
+            company=" The Light Story"
+            time="2023-Present"
+            address="Nawalpur, Nepal"
             companyLink="/"
-            work="Edited and produced video content, ensuring high-quality visuals and engaging storytelling for news and media broadcasts."
+            work="Edited and produced video content, ensuring high-quality visuals and engaging storytelling for youtube"
           />
         </ul>
       </div>
