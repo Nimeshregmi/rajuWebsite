@@ -7,6 +7,7 @@ import Image, { StaticImageData } from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../../../public/images/projects/img1.png";
 import project2 from "../../../../public/images/projects/img2.png";
+import project3 from "../../../../public/images/projects/img3.png";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -159,6 +160,16 @@ const page = () => {
                 title={"Your SALARY is NOT ENOUGH!! | WSO |"}
                 summary={"Salary to maintain simple living standard in nepal."}
                 link={"https://www.youtube.com/watch?v=Qju3fqYHQIM"}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeatureProject
+                githublink="/"
+                img={project3}
+                type={"Feature Project"}
+                title={"Rabi Lamichhane Could Get Jailed soon? | Sahakari Kanda Explained"}
+                summary={"Rabi Lamichhane, a well-known figure in Nepal, has recently been embroiled in controversy."}
+                link={"https://www.youtube.com/watch?v=5LR4UNI4F_k"}
               />
             </div>
             <div>
