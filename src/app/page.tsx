@@ -50,7 +50,7 @@ export default function Home() {
         {/* </div> */}
         {/* </Profilelayout> */}
         {/* <Hireme/> */}
-        <div className=" inline-block w-24 md:hidden">
+        {/* <div className=" inline-block mt-48 w-24 md:hidden">
           <div className="flex items-center  self-start mt-4 lg:self-center">
             <Link
               className="px-3 text-lg font-semibold rounded-2xl dark:bg-light bg-dark text-light dark:text-dark items-center p-2.5
@@ -64,7 +64,7 @@ export default function Home() {
               <LinkArrow className={"w-5 ml-1"} />
             </Link>
           </div>
-        </div>
+        </div> */}
         {/* </main> */}
       </div>
       <About />
