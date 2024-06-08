@@ -51,7 +51,7 @@ const CustomMobileLinks = ({
       >
         {title}
         <span
-          className={`h-1 bg-light dark:bg-dark inline-block absolute w-0 left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+          className={`h-1 bg-light  inline-block absolute w-0 left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
             router == href ? "w-full" : "w-0"
           } `}
         >
@@ -73,7 +73,7 @@ const CustomLinks = ({ title, className = "", href }: CustomLinksProps) => {
       >
         {title}
         <span
-          className={`h-1 bg-dark dark:bg-light inline-block absolute w-0 left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+          className={`h-1 bg-dark  inline-block absolute w-0 left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
             router == href ? "w-full" : "w-0"
           } `}
         >
@@ -94,8 +94,8 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="w-full px-32  justify-between items-center py-8 font-medium flex
-      z-10 lg:px-16 md:px-12 sm:px-6 dark:text-light relative"
+        className="w-full px-32 bg-rajucolor  fixed justify-between items-center py-7 font-medium flex
+      z-10 lg:px-16 md:px-12 sm:px-6  "
       >
         {/* Button for small size for small screen */}
         <button
@@ -106,17 +106,17 @@ const Navbar = () => {
           onClick={handleOnclick}
         >
           <span
-            className={`bg-dark dark:bg-light transition-all block duration-300 h-1 w-6 rounded-sm  ${
+            className={`bg-dark  transition-all block duration-300 h-1 w-6 rounded-sm  ${
               isOpen ? "rotate-45 translate-y-1.5" : "-translate-y-0.5"
             }`}
           ></span>
           <span
-            className={`bg-dark dark:bg-light transition-all block duration-300 h-1 w-6 rounded-sm my-0.5 ${
+            className={`bg-dark  transition-all block duration-300 h-1 w-6 rounded-sm my-0.5 ${
               isOpen ? "opacity-0" : "opacity-100"
             } `}
           ></span>
           <span
-            className={`bg-dark dark:bg-light transition-all block duration-300 h-1 w-6 rounded-sm  ${
+            className={`bg-dark  transition-all block duration-300 h-1 w-6 rounded-sm  ${
               isOpen ? "-rotate-45 -translate-y-1.5" : "translate-y-0.5"
             }`}
           ></span>
@@ -140,13 +140,13 @@ const Navbar = () => {
             <CustomMobileLinks
               className=""
               toggle={handleOnclick}
-              href="/about"
+              href="#about"
               title="About"
             />
             <CustomMobileLinks
               className=""
               toggle={handleOnclick}
-              href="/projects"
+              href="#projects"
               title="Projects"
             />
           </nav>
@@ -217,8 +217,8 @@ const Navbar = () => {
         <div className="w-full flex justify-between items-center lg:hidden">
           <nav>
             <CustomLinks href="/" title="Home" className="mr-4" />
-            <CustomLinks href="/about" title="About" className="mx-4" />
-            <CustomLinks href="/projects" title="Projects" className="mx-4" />
+            <CustomLinks href="#about" title="About" className="mx-4" />
+            <CustomLinks href="#projects" title="Projects" className="mx-4" />
           </nav>
           <nav className="flex items-center justify-center gap-5 flex-wrap">
             <motion.a
@@ -282,7 +282,7 @@ const Navbar = () => {
             </button>
           </nav>
         </div>
-        <div className="absolute left-[50%] translate-x-[-50%] top-2">
+        <div className="absolute left-[50%] translate-x-[-50%] ">
           <Logo />
         </div>
       </header>

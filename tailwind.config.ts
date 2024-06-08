@@ -51,6 +51,7 @@ const config: Config = {
       // => @media (max-width: 1023px) { ... }
 
       md: { max: "767px" },
+      // min_md: { min: "767px" },
       // => @media (max-width: 767px) { ... }
 
       sm: { max: "639px" },
@@ -67,6 +68,8 @@ const config: Config = {
       light: "#f5f5f5",
       primary: "#B63E96", // 240,86,199
       primaryDark: "#58E6D9", // 80,230,217
+      trainsparent:'transparent',
+      rajucolor: "#ffE401",
     },
   },
   plugins: [],

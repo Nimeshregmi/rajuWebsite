@@ -37,16 +37,16 @@ const Skills = () => {
         >
           Video Editing
         </motion.div>
-        <Skill name="Story Telling" x="-25vw" y="2vw"/>
+        <Skill name="Story Telling" x="-29vw" y="2vw"/>
         <Skill name="UI/UX" x="-5vw" y="-10vw"/>
-        <Skill name="Motion Graphics" x="25vw" y="1vw"/>
+        <Skill name="Illustrator" x="27vw" y="1vw"/>
         <Skill name="Graphic Design" x="0vw" y="12vw"/>
         <Skill name="Animation" x="-16vw" y="-19vw"/>
         <Skill name="Premier Pro" x="16vw" y="-18vw"/>
         <Skill name="After Effects" x="-32vw" y="-8vw"/>
         <Skill name="Photoshop" x="0" y="-25vw"/>
         <Skill name="Figma" x="-25vw" y="21vw"/>
-        <Skill name="Illustrator" x="18vw" y="18vw"/>
+        <Skill name=" Motion Graphics" x="18vw" y="18vw"/>
       </div>
     </>
   );
