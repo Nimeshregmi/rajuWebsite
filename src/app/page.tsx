@@ -1,11 +1,11 @@
-import Profilelayout from "@/components/Profilelayout";
-import Image from "next/image";
-import Profilepic from "../../public/images/profile/heropic.jpeg";
-import AnimatedText from "@/components/AnimatedText";
-import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
+// import Profilelayout from "@/components/Profilelayout";
+// import Image from "next/image";
+// import Profilepic from "../../public/images/profile/heropic.jpeg";
+// import AnimatedText from "@/components/AnimatedText";
+// import Link from "next/link";
+// import { LinkArrow } from "@/components/Icons";
 // import Hireme from "@/components/Hireme";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+// import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 

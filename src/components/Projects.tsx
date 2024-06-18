@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 // import project4 from '../../public'
 import project1 from "../../public/images/projects/img1.png";
+import project4 from "../../public/images/projects/img4.png";
 import project2 from "../../public/images/projects/img2.png";
 import project3 from "../../public/images/projects/img3.png";
 import { motion } from "framer-motion";
@@ -160,6 +161,16 @@ const Projects = () => {
                 title={"Your SALARY is NOT ENOUGH!! | WSO |"}
                 summary={"Salary to maintain simple living standard in nepal."}
                 link={"https://www.youtube.com/watch?v=Qju3fqYHQIM"}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeatureProject
+                githublink="/"
+                img={project4}
+                type={"Feature Project"}
+                title={"Television is DEAD! | Binayak Kuikel | WSO"}
+                summary={"Current Television situation in Nepal."}
+                link={"https://www.youtube.com/watch?v=bdu6YBwZIho"}
               />
             </div>
             <div className="col-span-12">
