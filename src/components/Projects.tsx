@@ -9,6 +9,7 @@ import project1 from "../../public/images/projects/img1.png";
 import project4 from "../../public/images/projects/img4.png";
 import project2 from "../../public/images/projects/img2.png";
 import project3 from "../../public/images/projects/img3.png";
+import project5 from "../../public/images/projects/img5.png";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -143,6 +144,16 @@ const Projects = () => {
             text="Imagination Trumps Knowledge!"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeatureProject
+                githublink="/"
+                img={project5}
+                type={"Feature Project"}
+                title={"Why is PARAS SHAH the MOST HATED PRINCE of NEPAL?"}
+                summary={"A youtube video on life story of PRINCE of NEPAL."}
+                link={"https://www.youtube.com/watch?v=NZ8UDrxV2EA&t=5s"}
+              />
+            </div>
             <div className="col-span-12">
               <FeatureProject
                 githublink="/"
