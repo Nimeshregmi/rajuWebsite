@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           }`}
         </Script>
         <Navbar />
+        <Analytics />
         <main className="pt-16">{children}</main>
         <Footer/>
       </body>
